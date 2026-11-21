@@ -1,0 +1,79 @@
+---
+import "../styles/custom-bulma.scss";
+import "../styles/global.css";
+
+import EmotionsLayout from "../layouts/EmotionsLayout.astro";
+import data from "../data/phrases.json";
+
+const characterData =
+	data.find((item) => item.character === "alice") || data[0];
+const selectedIntro =
+	characterData.intros[
+		Math.floor(Math.random() * characterData.intros.length)
+	];
+
+const selectedGame =
+	characterData.activities[
+		Math.floor(Math.random() * characterData.activities.length)
+	];
+
+const selectedOutro =
+	characterData.outros[
+		Math.floor(Math.random() * characterData.outros.length)
+	];
+---
+
+<EmotionsLayout
+	pageTitle="Mad Hatter - Anxiety"
+	frameColor="#143628"
+	shadowColor="#c7eadc"
+	innerColor="#F4F7F0"
+	textBtnColor="#0e251c"
+	pattern="url(hatter.png)"
+>
+	<div id="divIntro" class="has-text-centered">
+		<h1 class="title" style="font-family: var(--font-griffy)">
+			{selectedIntro.title}
+		</h1>
+		<h3 class="subtitle">{selectedIntro.subtitle}</h3>
+	</div>
+
+	<div id="divGame" class="is-hidden has-text-centered">
+		<div class="field">
+			<label class="label">{selectedGame.prompt}</label>
+			<div class="control">
+				{selectedGame.type === "long_text" ? (
+					<textarea
+						class="textarea"
+						rows="4"
+						placeholder={
+							selectedGame.placeholder || "Write your thoughts..."
+						}
+					></textarea>
+				) : (
+					<input
+						class="input"
+						type="text"
+						placeholder={
+							selectedGame.placeholder || "Type your answer..."
+						}
+					/>
+				)}
+			</div>
+		</div>
+
+		<button class="button" id="next-btn">
+			<span>{selectedGame.buttonText}</span>{" "}
+			<span class="icon">
+				<i class="fa-solid fa-chevron-right fa-fw"></i>
+			</span>
+		</button>
+	</div>
+
+	<div id="divOutro" class="is-hidden has-text-centered">
+		<h3 class="subtitle is-3">{selectedOutro}</h3>
+	</div>
+	<script>
+		import "../scripts/page-flow.js";
+	</script>
+</EmotionsLayout>

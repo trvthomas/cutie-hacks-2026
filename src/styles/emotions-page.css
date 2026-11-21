@@ -1,0 +1,77 @@
+body,
+html {
+    background-color: var(--inner-color) !important;
+    background-image: var(--bg-pattern);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-body {
+    padding: 20vh 10vw 8vh 10vw;
+    justify-content: center;
+}
+
+.hero-body div {
+    max-height: 72vh;
+    overflow-y: auto;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+
+.borders-x {
+    height: 100vh;
+    width: 10vw;
+    background-color: var(--frame-color);
+    position: absolute;
+}
+
+.borders-x.left {
+    top: 0;
+    left: 0;
+    box-shadow: 0.5rem 0 3rem var(--shadow-color);
+    clip-path: ellipse(100% 65% at 0% 50%);
+}
+
+.borders-x.right {
+    top: 0;
+    right: 0;
+    box-shadow: -0.5rem 0 3rem var(--shadow-color);
+    clip-path: ellipse(100% 65% at 100% 50%);
+}
+
+.borders-y {
+    height: 8vh;
+    width: 100vw;
+    background-color: var(--frame-color);
+    position: absolute;
+}
+
+.borders-y.top {
+    height: 20vh;
+    top: 0;
+    left: 0;
+    clip-path: ellipse(65% 100% at 50% 0%);
+}
+
+.borders-y.bottom {
+    bottom: 0;
+    left: 0;
+    clip-path: ellipse(65% 100% at 50% 100%);
+}
+
+h1 {
+    color: var(--txtbtn-color) !important;
+    line-height: 0.9;
+}
+
+button {
+    background-color: var(--txtbtn-color) !important;
+    color: var(--inner-color) !important;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {}

@@ -1,0 +1,66 @@
+---
+import { Font } from "astro:assets";
+
+import "../styles/global.css";
+import "../styles/emotions-page.css";
+
+const {
+	pageTitle = "Alice in Wonderland",
+	frameColor,
+	shadowColor,
+	innerColor,
+	textBtnColor,
+	pattern,
+} = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<Font cssVariable="--font-fraunces" preload />
+		<Font cssVariable="--font-griffy" preload />
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta charset="utf-8" />
+
+		<script
+			src="https://kit.fontawesome.com/8dd184e6f2.js"
+			crossorigin="anonymous"
+		></script>
+
+		<title>{pageTitle}</title>
+	</head>
+	<body
+		style={{
+			"--inner-color": innerColor,
+			"--bg-pattern": pattern,
+		}}
+	>
+		<section
+			class="hero is-fullheight"
+			style={{
+				position: "relative",
+				"--frame-color": frameColor,
+				"--shadow-color": shadowColor,
+				"--inner-color": innerColor,
+				"--txtbtn-color": textBtnColor,
+			}}
+		>
+			<div class="borders-x left"></div>
+			<div class="borders-x right"></div>
+			<div class="borders-y top"></div>
+			<div class="borders-y bottom"></div>
+
+			<div class="hero-body">
+				<div>
+					<slot>
+						<h1>Error state</h1>
+					</slot>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,5 @@
+@use "sass:color";
+@use "bulma/sass" with (
+    $primary: hsl(0, 57%, 10%),
+    $text: hsl(213, 49%, 14%)
+    );

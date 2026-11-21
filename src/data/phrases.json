@@ -1,0 +1,190 @@
+[
+    {
+        "character": "alice",
+        "intros": [
+            {
+                "title": "The room is spinning too fast",
+                "subtitle": "Take a breath with me!"
+            },
+            {
+                "title": "Too many doors, too many directions?",
+                "subtitle": "Pick just this one moment"
+            },
+            {
+                "title": "Feeling shrunk by the weight of everything?",
+                "subtitle": "Let's make some space"
+            },
+            {
+                "title": "when the world gets curiouser and louder...",
+                "subtitle": "hit pause for a second"
+            }
+        ],
+        "activities": [
+            {
+                "type": "short_text",
+                "prompt": "Everything feels huge right now. Write the ONE single task that actually matters to you in the next 15 minutes.",
+                "placeholder": "",
+                "buttonText": "Shrink and focus"
+            },
+            {
+                "type": "short_text",
+                "prompt": "Name 3 physical objects within arm's reach right now to ground yourself in this room",
+                "placeholder": "",
+                "buttonText": "Anchor me"
+            },
+            {
+                "type": "long_text",
+                "prompt": "Empty your entire mental to-do list onto this scroll so your brain doesn't have to hold it anymore",
+                "placeholder": "",
+                "buttonText": "Cork the bottle"
+            }
+        ],
+        "outros": [
+            "You don't have to solve all of Wonderland today, just take the very next step",
+            "One small door at a time is more than enough",
+            "You've caught your breath. Now step back out whenever you're ready",
+            "You are always the exact right size for the moment you are in"
+        ]
+    },
+    {
+        "character": "queen-of-hearts",
+        "intros": [
+            {
+                "title": "Fury rules no good kingdom",
+                "subtitle": "Drop your shoulders and exhale"
+            },
+            {
+                "title": "Too hot to think straight?",
+                "subtitle": "Step off the throne for a moment"
+            },
+            {
+                "title": "Your royal temper is boiling over!",
+                "subtitle": "Take a breath, Your Majesty"
+            },
+            {
+                "title": "Ready to shout 'Off with their heads!'?",
+                "subtitle": "Let's cool that fire first"
+            }
+        ],
+        "activities": [
+            {
+                "type": "long_text",
+                "prompt": "Write the brutally honest, unsent royal decree you want to shout right now. Don't filter it (this disappears forever)",
+                "placeholder": "",
+                "buttonText": "Burn the anger"
+            },
+            {
+                "type": "short_text",
+                "prompt": "Finish this sentence honestly: I am seeing red right now because...",
+                "placeholder": "",
+                "buttonText": "Cool the crown"
+            },
+            {
+                "type": "short_text",
+                "prompt": "Write down the one person, thing, or expectation you need to step away from for 10 minutes",
+                "placeholder": "",
+                "buttonText": "Lower the sword"
+            }
+        ],
+        "outros": [
+            "True royalty doesn't need to shout to command the room. Walk out with your crown steady",
+            "You set the heat down before it burned you. That is real power.",
+            "Take a deep breath, straighten your crown, and move forward unbothered",
+            "Strength isn't the storm, it's the calm that remains after it passes"
+        ]
+    },
+    {
+        "character": "chesire-cat",
+        "intros": [
+            {
+                "title": "Fading into a loop of 'what ifs'?",
+                "subtitle": "Let's bring you back to focus"
+            },
+            {
+                "title": "Your mind is chasing its own tail",
+                "subtitle": "Pause and vanish the noise"
+            },
+            {
+                "title": "Overthinking every possible path?",
+                "subtitle": "None of them matter right now"
+            },
+            {
+                "title": "When your thoughts start multiplying like shadows...",
+                "subtitle": "turn on the light"
+            }
+        ],
+        "activities": [
+            {
+                "type": "short_text",
+                "prompt": "Summarize the exact 'what if' loop spinning in your head in 5 words or fewer",
+                "placeholder": "",
+                "buttonText": "Vanish the loop"
+            },
+            {
+                "type": "long_text",
+                "prompt": "Write down the worst-case scenario your brain is inventing, then write one ridiculous, absurd best-case scenario right below it",
+                "placeholder": "",
+                "buttonText": "Untangle the riddle"
+            },
+            {
+                "type": "short_text",
+                "prompt": "Look away from your screen and write down the weirdest or most specific sound you can hear right now",
+                "placeholder": "",
+                "buttonText": "Fade back in"
+            }
+        ],
+        "outros": [
+            "The fog has cleared, and all that's left is right here, right now",
+            "Tomorrow's puzzles don't belong to this minute. Leave them in the dark",
+            "You don't need to know the whole map to take one clear step",
+            "Not every riddle needs an answer, some just need to fade away"
+        ]
+    },
+    {
+        "character": "mad-hatter",
+        "intros": [
+            {
+                "title": "Stuck in a frantic loop?",
+                "subtitle": "Declare an un-birthday break right now!"
+            },
+            {
+                "title": "No rush, no rules, no ticking clocks",
+                "subtitle": "Just your breath"
+            },
+            {
+                "title": "Put the pocket watch away!",
+                "subtitle": "You have all the time you need"
+            },
+            {
+                "title": "Chasing seconds that haven't happened yet?",
+                "subtitle": "Come back to the present"
+            }
+        ],
+        "activities": [
+            {
+                "type": "short_text",
+                "prompt": "Time is frozen at this tea party. Write down one thing you are rushing that can actually wait",
+                "placeholder": "",
+                "buttonText": "Stop the clock"
+            },
+            {
+                "type": "long_text",
+                "prompt": "Dump every frantic, racing thought ticking in your head onto the table right now.",
+                "placeholder": "",
+                "buttonText": "Pour the tea"
+            },
+            {
+                "type": "short_text",
+                "prompt": "Write down one physical tension you're holding right now and drop it",
+                "placeholder": "e.g., tight jaw, raised shoulders",
+                "buttonText": "Unwind the spring"
+            }
+        ],
+        "outros": [
+            "Time works for you now, not against you. Take the rest of your day slowly",
+            "Tea is finished, nerves are settled, and you are right on time",
+            "Consider this your official Un-Birthday permission to take things easy",
+            "You don't have to wind yourself up to survive today. Stay loose"
+        ]
+    }
+]
