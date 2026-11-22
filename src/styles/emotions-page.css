@@ -1,6 +1,10 @@
 body,
 html {
     background-color: var(--inner-color) !important;
+}
+
+.hero.is-fullheight{
+    background-color: var(--inner-color);
     background-image: var(--bg-pattern);
     background-position: center;
     background-repeat: no-repeat;
